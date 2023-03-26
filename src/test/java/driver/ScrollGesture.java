@@ -44,32 +44,5 @@ public class ScrollGesture {
                         "text(\"Animation\"))")).click();
 
 
-//        boolean canScrollMore = true;
-//        while (canScrollMore)
-//            canScrollMore = (Boolean) driver.executeScript("mobile: scrollGesture", ImmutableMap.of(
-//                    "left", 100, "top", 100, "width", 600, "height", 600,
-//                    "direction", "down",
-//                    "percent", 0.75
-//            ));
-//        System.out.println("can scroll more " + canScrollMore);
-
-//        WebElement element = driver.findElement(AppiumBy.id("android:id/list"));
-//        canScrollMore = true;
-//
-//        Thread.sleep(5000);
-//        while (canScrollMore) {
-//            canScrollMore = (Boolean) driver.executeScript("mobile: scrollGesture", ImmutableMap.of(
-//                  "elementId",((RemoteWebElement)element).getId(),
-//                    "direction", "up",
-//                    "percent", 0.75
-//                    )
-//            );
-//            System.out.println("can scroll more 1 " + canScrollMore);
-//        }
-//
-//
-//    }
-
-
     }
 }
