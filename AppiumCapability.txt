@@ -2,6 +2,11 @@
  // command to get the app activity and app package.
 //        adb shell "dumpsys window | grep -E mCurrentFocus"
 
+/*
+In the Capability 1 below, com.swaglabsmobileapp.MainActivity is the name of the main activity for the app. 
+Appium will wait for this activity to appear before proceeding with the test.
+*/
+
 Capability 1 
 {
   "appium:automationName": "Uiautomator2",
