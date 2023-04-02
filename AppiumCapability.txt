@@ -1,0 +1,29 @@
+ // Android
+ // command to get the app activity and app package.
+//        adb shell "dumpsys window | grep -E mCurrentFocus"
+
+Capability 1 
+{
+  "appium:automationName": "Uiautomator2",
+  "platformName": "Android",
+  "appium:app": "C:\\Users\\shreyansh\\Downloads\\Android.SauceLabs.Mobile.Sample.app.2.7.1.apk",
+  "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"
+}
+
+Capability 2
+{
+  "appium:automationName": "Uiautomator2",
+  "platformName": "Android",
+  "appium:app": "C:\\Users\\shreyansh\\Downloads\\Android.SauceLabs.Mobile.Sample.app.2.7.1.apk",
+  "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity",
+  "appium:settings[ignoreUnimportantViews]": true
+}
+
+Capability 3
+{
+  "appium:automationName": "Uiautomator2",
+  "platformName": "Android",
+  "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity",
+  "appium:settings[ignoreUnimportantViews]": true,
+  "autoLaunch": false
+}
