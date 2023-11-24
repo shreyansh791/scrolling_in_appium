@@ -73,7 +73,12 @@ public class Scrolling {
                 + ".scrollIntoView(new UiSelector().textContains(\"" + text + "\"))"));
 
     }
-
+    public static WebElement scrollToElementByDescriptionContains(AppiumDriver driver, String descContains) {
+        return driver.findElement(AppiumBy.androidUIAutomator(
+                "new UiScrollable(new UiSelector()" + ".scrollable(true)).scrollIntoView("
+                        + "new UiSelector().descriptionContains(\""+descContains+"\"));"));
+    }
+// https://developer.android.com/reference/androidx/test/uiautomator/UiSelector
 
     public WebElement scrollToId_Android(AppiumDriver driver,String id) {
         return driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true))"
